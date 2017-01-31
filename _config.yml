@@ -6,7 +6,7 @@ title: 'DeafChi'
 ## note:
 #  use site.path in your templates to make it work for both protocols e.g. http and https
 #  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
-path: "deafchi.github.io"
+path: "deafchi.com"
 url:  'https://deafchi.github.io/'
 
 
