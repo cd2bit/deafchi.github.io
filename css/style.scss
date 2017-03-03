@@ -5,14 +5,9 @@
 
 @import 'bootstrap';
 
-
 // add more css stuff here
 
-body {
-  padding-top: 50px;
+html, body, #jumbotron-header {
+  height: 100%;
+  height: 100vh;
 }
-
-.content {
-  padding: 40px 15px;
-}
-
