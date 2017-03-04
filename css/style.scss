@@ -1,6 +1,9 @@
 ---
 ---
 
+@import 'base/mixins';
+@include font-face("ATC Arquette Regular", "../fonts/ATCArquette-Regular");
+
 // add bootstrap variable settings here
 
 @import 'bootstrap';
@@ -13,5 +16,5 @@ html, body, #jumbotron-header {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "ATC Arquette Regular", 'Lato', sans-serif;
 }
