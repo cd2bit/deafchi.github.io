@@ -24,7 +24,9 @@ sass:
 
 exclude:
 - README.rst
+- Gemfile
 - Gemfile.lock
+- test_travis.sh
 
 safe: true
 lsi: false
