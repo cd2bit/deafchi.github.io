@@ -15,3 +15,6 @@ run `$ bundle install`
 
 ### Running on locally
 run `$ bundle exec jekyll serve`
+
+### To Test
+run `$ bundle exec htmlproofer ./_site --only-4xx --check-favicon --chec-html --allow-hash-href`
