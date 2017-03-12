@@ -8,13 +8,9 @@
 
 @import 'bootstrap';
 
+@import 'meta-queries';
 // add more css stuff here
 
-html, body, #jumbotron-header {
-  height: 100%;
-  height: 100vh;
-}
+@import 'layouts/global';
 
-body {
-  font-family: "ATC Arquette Regular", 'Open Sans', sans-serif;
-}
+@import 'layouts/converstations';

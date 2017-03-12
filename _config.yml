@@ -8,7 +8,7 @@ author: 'Chicago Deaf Techies'
 ## note:
 #  use site.path in your templates to make it work for both protocols e.g. http and https
 #  use site.url only inside the web feed template (e.g. requires full url incl. protocol)
-url:  'https://deafchi.com/'
+url:  'https://deafchi.com'
 enforce_ssl: 'deafchi.com'
 copyright: 'Copyright &copy; 2017 DeafChi. All Rights Reserved.'
 credits: 'Credits: made with love using Twitter Bootstrap.'
@@ -24,6 +24,7 @@ sass:
 
 exclude:
 - README.rst
+- Gemfile.lock
 
 safe: true
 lsi: false

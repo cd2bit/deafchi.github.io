@@ -1,0 +1,133 @@
+#conversations {
+  width: 100%;
+
+  > .row {
+    height: calc(100vmax - 30px);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    @include old-mobile {
+      height: calc(100vmax - 120px);
+    }
+
+  //  @include table {
+    //  height: calc(100vmax - 300px);
+  //  }
+
+    > div {
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .grid- {
+    &core {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      border: 10px #FFF solid;
+
+      > a {
+        height: 100%;
+        width: 100%;
+        display: block;
+
+        > p {
+          position: absolute;
+          bottom: 0;
+          background-color: #FFF;
+          font-size: 11px;
+          margin: 30px 20px;
+          padding: 5px 10px 5px 8px;
+
+          > b {
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    &4x4 {
+      height: calc(100% / 3);
+
+      @include old-mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
+
+      @include mobile {
+        height: 50%;
+      }
+
+      @include tablet-portrait {
+        height: 25%;
+      }
+    }
+
+    &6x6 {
+      height: 50%;
+
+      @include old-mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
+
+      @include mobile {
+        height: 50%;
+      }
+
+      @include tablet-portrait {
+        height: 40%;
+      }
+    }
+
+    &8x8 {
+      height: calc((100% / 3) * 2);
+
+      .grid-core > a > p {
+        bottom: initial;
+        top: 0;
+      }
+
+      @include old-mobile {
+        .grid-core > a > p {
+          bottom: 0;
+          top: initial;
+        }
+      }
+
+      @include mobile {
+        height: 50%;
+
+        .grid-core > a > p {
+          bottom: 0;
+          top: initial;
+        }
+      }
+
+      @include tablet-portrait {
+        height: 50%;
+      }
+    }
+
+    &4x8x1 {
+      height: calc((100vmax - 30px) / 3);
+      border: none;
+      padding: 0;
+
+      @include old-mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
+
+      @include mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
+
+      @include tablet-portrait {
+        height: 50%;
+      }
+    }
+  }
+}
