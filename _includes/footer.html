@@ -1,36 +1,72 @@
 <!-- Footer -->
 <footer>
   <div class="container">
-    <ul class="list-inline row text-xs-center">
-      <li class="list-inline-item col-xs-12 lead text-uppercase">
-        <a href="/">
-          Home
-        </a>
-      </li>
-      <li class="list-inline-item col-xs-12">
-        <a href="/conversations">
-          Conversations
-        </a>
-      </li>
-      <li class="list-inline-item col-xs-12">
-        <a href="#">
-          Events
-        </a>
-      </li>
-      <li class="list-inline-item col-xs-12">
-        <a href="#">
-          People
-        </a>
-      </li>
-    </ul>
-    <div class="row">
-      <div class="col-xs-6">
+    <div class="row text-center text-md-left">
+      <div class="col-12 col-md-3">
+        <h1 class="font-weight-bold">DeafChi</h1>
+        <ul class="list-inline">
+        {% for social in site.social %}
+          <li class="list-inline-item">
+            <a href="{{social.url}}">
+              <i class="text-muted fa fa-{{social.icon}} fa"></i>
+              <span class="sr-only">{{social.name}}</span>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <ul class="list-unstyled">
+          <li class="col-12 lead text-uppercase font-weight-bold">
+            <a href="/">
+              Home
+            </a>
+          </li>
+          <li class="col-12">
+            <a href="/conversations">
+              Conversations
+            </a>
+          </li>
+          <li class="col-12">
+            <a href="#">
+              Events
+            </a>
+          </li>
+          <li class="col-12">
+            <a href="#">
+              People
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-3">
+        <ul class="list-unstyled">
+          <li class="col-12 lead text-uppercase font-weight-bold">
+            <a href="#">
+              Information
+            </a>
+          </li>
+          <li class="col-12">
+            <a href="#">
+              Our Story
+            </a>
+          </li>
+          <li class="col-12">
+            <a href="#">
+              Get Involved
+            </a>
+          </li>
+          <li class="col-12">
+            <a href="#">
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-12 text-center">
         <p class="copyright text-muted small">
           {{ site.copyright }}
         </p>
-      </div>
-      <div class="col-xs-6">
-        {{ site.credits }}
       </div>
     </div>
   </div>
