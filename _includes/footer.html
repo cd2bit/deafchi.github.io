@@ -1,28 +1,47 @@
 <!-- Footer -->
 <footer>
   <div class="container">
-    <ul class="list-inline row text-xs-center">
-      <li class="list-inline-item col-xs-12 lead text-uppercase">
-        <a href="/">
-          Home
-        </a>
-      </li>
-      <li class="list-inline-item col-xs-12">
-        <a href="/conversations">
-          Conversations
-        </a>
-      </li>
-      <li class="list-inline-item col-xs-12">
-        <a href="#">
-          Events
-        </a>
-      </li>
-      <li class="list-inline-item col-xs-12">
-        <a href="#">
-          People
-        </a>
-      </li>
-    </ul>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h1 class="font-weight-bold">DeafChi</h1>
+      </div>
+      <div class="col-sm-12 text-center">
+        <ul class="list-inline">
+        {% for social in site.social %}
+          <li class="list-inline-item">
+            <a href="{{social.url}}">
+              <i class="text-muted fa fa-{{social.icon}} fa-2x"></i>
+              <span class="sr-only">{{social.name}}</span>
+            </a>
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col-sm-12 text-center">
+      <ul class="list-inline">
+        <li class="list-inline-item lead text-uppercase">
+          <a href="/">
+            Home
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="/conversations">
+            Conversations
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            Events
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#">
+            People
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="row">
       <div class="col-xs-6">
         <p class="copyright text-muted small">
