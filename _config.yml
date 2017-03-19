@@ -13,6 +13,32 @@ enforce_ssl: 'deafchi.com'
 copyright: 'Copyright &copy; 2017 DeafChi. All Rights Reserved.'
 credits: 'Credits: made with love using Twitter Bootstrap.'
 
+######## Social Settings
+social:
+  -
+    name: facebook
+    icon: facebook-square
+    url: '#'
+  -
+    name: twitter
+    icon: twitter-square
+    url: '#'
+
+  -
+    name: instagram
+    icon: instagram
+    url: '#'
+
+  -
+    name: slack
+    icon: slack
+    url: '#'
+
+  -
+    name: github
+    icon: github-square
+    url: '#'
+
 ########
 # more settings
 
