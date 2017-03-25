@@ -42,6 +42,11 @@ social:
 ########
 # more settings
 
+collections:
+  people:
+    output: true
+    permalink: /conversations/:path
+
 markdown: kramdown
 
 sass:

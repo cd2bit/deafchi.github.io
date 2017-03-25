@@ -1,0 +1,208 @@
+#interview {
+  &-header {
+    margin: 70px 0;
+
+    > .row {
+      > #photo {
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+
+        @include old-mobile {
+          max-height: 350px;
+        }
+        @include mobile {
+          max-height: 350px;
+        }
+      }
+
+      > #detail {
+        background-color: $gray;
+        color: $white;
+        padding: 25px 20px;
+        font-weight: 100;
+
+        @include old-mobile {
+          text-align: center;
+        }
+        @include mobile {
+          text-align: center;
+        }
+
+        .h2 {
+          font-weight: 200;
+        }
+
+        hr {
+          border-bottom: 1px solid $white;
+          width: 15px;
+          text-align: left;
+          margin-left: 0;
+
+          @include old-mobile {
+            text-align: center;
+            margin-left: auto;
+          }
+          @include mobile {
+            text-align: center;
+            margin-left: auto;
+          }
+        }
+
+        #role {
+          line-height: 28px;
+        }
+        
+        #links {
+          > strong {
+            text-transform: uppercase;
+            display: block;
+            font-weight: 500;
+            margin-top: 20px;
+
+            @include old-mobile {
+              margin-bottom: 14px;
+            }
+            @include mobile {
+              margin-bottom: 14px;
+            }
+          }
+
+          @include old-mobile {
+            margin-bottom: 18px;
+          }
+          @include mobile {
+            margin-bottom: 18px;
+          }
+
+          > ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+              padding: 0;
+              margin: 0;
+              display: block;
+
+              a {
+                display: block;
+                color: $white;
+                margin: 10px 0;
+
+                @include old-mobile {
+                  display: initial;
+                }
+                @include mobile {
+                  display: initial;
+                }
+
+                &:hover {
+                  font-weight: bold;
+                }
+              }
+
+              @include old-mobile {
+                display: inline-block;
+              }
+              @include mobile {
+                display: inline-block;
+              }
+            }
+          }
+        }
+
+        #credits {
+          position: absolute;
+          bottom: 20px;
+          font-size: 12px;
+          text-transform: uppercase;
+
+          span {
+            display: block;
+            margin-top: 2px;
+          }
+
+          @include old-mobile {
+            position: static;
+          }
+          @include mobile {
+            position: static;
+          }
+        }
+      }
+    }
+  }
+
+  &-page {
+    max-width: 800px;
+    margin-top: 25px;
+
+    @include old-mobile {
+      padding: 0;
+    }
+    @include mobile {
+      padding: 0;
+    }
+
+    #top-section {
+      margin: 0 75px 25px;
+
+      @include old-mobile {
+        margin: 0;
+      }
+      @include mobile {
+        margin: 0;
+      }
+
+      #video {
+        height: 250px;
+        margin-bottom: 20px;
+      }
+
+      #summary {
+        line-height: 26px;
+
+        @include old-mobile {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+        @include mobile {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    #bottom-section {
+      p  {
+        margin: 0 75px 24px;
+        line-height: 32px;
+
+        @include old-mobile {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        @include mobile {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+
+        b {
+          margin-bottom: 10px;
+          display: block;
+          font-weight: 700;
+          line-height: 20px;
+        }
+      }
+
+      .blockquote {
+        border-left: none;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

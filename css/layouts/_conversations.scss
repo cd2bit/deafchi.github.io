@@ -1,5 +1,5 @@
 #conversations {
-  width: 100%;
+  margin-top: 70px;
 
   > .row {
     height: calc(100vmax - 30px);
@@ -10,10 +10,6 @@
     @include old-mobile {
       height: calc(100vmax - 120px);
     }
-
-  //  @include table {
-    //  height: calc(100vmax - 300px);
-  //  }
 
     > div {
       border: none;
