@@ -2,7 +2,8 @@
 ---
 
 @import 'base/mixins';
-@include font-face("ATC Arquette Regular", "../fonts/ATCArquette-Regular");
+
+@import '_atc_arquett_fonts';
 
 // add bootstrap variable settings here
 
