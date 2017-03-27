@@ -10,3 +10,10 @@ body {
 body > .container {
   margin-top: 100px;
 }
+
+// weird bootstrap bug where was adding extra margin-right making page scrollable to right
+.row {
+  @include mobile {
+    margin-right: 0;
+  }
+}

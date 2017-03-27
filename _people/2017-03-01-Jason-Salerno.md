@@ -18,6 +18,7 @@ social:
   twitter: meltedspork
   instagram: meltedspork
   linkedin: jasonsalerno
+  github: meltedspork
   website: http://www.meltedspork.com
 ---
 

@@ -50,14 +50,12 @@
     &4x4 {
       height: calc(100% / 3);
 
-      @include old-mobile {
-        height: calc((100vmax - 30px) / 2);
-      }
-
       @include mobile {
         height: 50%;
       }
-
+      @include old-mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
       @include tablet-portrait {
         height: 25%;
       }
@@ -66,14 +64,12 @@
     &6x6 {
       height: 50%;
 
-      @include old-mobile {
-        height: calc((100vmax - 30px) / 2);
-      }
-
       @include mobile {
         height: 50%;
       }
-
+      @include old-mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
       @include tablet-portrait {
         height: 40%;
       }
@@ -87,13 +83,6 @@
         top: 0;
       }
 
-      @include old-mobile {
-        .grid-core > a > p {
-          bottom: 0;
-          top: initial;
-        }
-      }
-
       @include mobile {
         height: 50%;
 
@@ -102,7 +91,14 @@
           top: initial;
         }
       }
+      @include old-mobile {
+        height: calc((100% / 3) * 2);
 
+        .grid-core > a > p {
+          bottom: 0;
+          top: initial;
+        }
+      }
       @include tablet-portrait {
         height: 50%;
       }
@@ -113,14 +109,12 @@
       border: none;
       padding: 0;
 
-      @include old-mobile {
-        height: calc((100vmax - 30px) / 2);
-      }
-
       @include mobile {
         height: calc((100vmax - 30px) / 2);
       }
-
+      @include old-mobile {
+        height: calc((100vmax - 30px) / 2);
+      }
       @include tablet-portrait {
         height: 50%;
       }
