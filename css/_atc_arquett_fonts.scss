@@ -1,23 +1,22 @@
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Extralight', 100, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-ExtralightItalic', 100, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Extralight', 100, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-ExtralightItalic', 100, italic);
 
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Light', 200, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-LightItalic', 200, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Light', 200, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-LightItalic', 200, italic);
 
 // 400
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Regular', normal, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-RegularItalic', normal, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Regular', normal, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-RegularItalic', normal, italic);
 
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Medium', 500, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-MediumItalic', 500, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Medium', 500, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-MediumItalic', 500, italic);
 
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Semibold', 600, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-SemiboldItalic', 600, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Semibold', 600, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-SemiboldItalic', 600, italic);
 
 // 700
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Bold', bold, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-BoldItalic', bold, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Bold', bold, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-BoldItalic', bold, italic);
 
-
-@include font-face('ATC Arquette', '../fonts/ATCArquette-Black', 900, normal);
-@include font-face('ATC Arquette', '../fonts/ATCArquette-BlackItalic', 900, italic);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-Black', 900, normal);
+@include font-face('ATC Arquette', '/fonts/ATCArquette/ATCArquette-BlackItalic', 900, italic);

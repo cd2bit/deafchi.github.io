@@ -1,0 +1,59 @@
+<!-- Header -->
+<div id="interview-header" class="container-fluid">
+  <div class="row">
+    <div id="photo" class="col-md-8" style="background-image: url(/conversations/photos/{{ page.photo.path }});">
+    </div>
+    <div id="detail" class="col-md-4">
+      <p class="h2">
+        {{ page.person.first }} {{ page.person.last }}
+      </p>
+      <hr />
+      <p id="role">
+        {{ page.person.role }}
+      </p>
+      <div id="links">
+        <strong>Link</strong>
+        <ul>
+        {% if page.social.twitter != '' and page.social.twitter != nil  %}
+          <li>
+            <a href="https://twitter.com/{{ page.social.twitter }}">Twitter</a>
+          </li>
+        {% endif %}
+        {% if page.social.instagram != '' and page.social.instagram != nil  %}
+          <li>
+            <a href="https://www.instagram.com/{{ page.social.instagram }}">Instagram</a>
+          </li>
+        {% endif %}
+        {% if page.social.github != '' and page.social.github != nil  %}
+          <li>
+            <a href="https://github.com/{{ page.social.github }}">Github</a>
+          </li>
+        {% endif %}
+        {% if page.social.website != '' and page.social.website != nil  %}
+          <li>
+            <a href="{{ page.social.website }}">Website</a>
+          </li>
+        {% endif %}
+        {% if page.social.linkedin != '' and page.social.linkedin != nil  %}
+          <li>
+            <a href="https://linkedin.com/in/{{ page.social.linkedin }}">Linkedin</a>
+          </li>
+        {% endif %}
+        </ul>
+      </div>
+      <div id="credits">
+        <span>
+          {{ page.interview.date | date: '%B %d, %Y' }}
+        </span>
+        <span>
+          Interview by {{ page.interview.by }}
+        </span>
+        {% if page.photo.by != '' and page.photo.by != nil  %}
+          <span>
+            Photo by {{ page.photo.by }}
+          </span>
+        {% endif %}
+      <div>
+    </div>
+  </div>
+</div>

@@ -4,9 +4,16 @@ html, body, #jumbotron-header {
 }
 
 body {
-  font-family: "ATC Arquette Regular", 'Open Sans', sans-serif;
+  font-family: "ATC Arquette", 'Open Sans', sans-serif;
 }
 
 body > .container {
   margin-top: 100px;
+}
+
+// weird bootstrap bug where was adding extra margin-right making page scrollable to right
+.row {
+  @include mobile {
+    margin-right: 0;
+  }
 }
